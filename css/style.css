@@ -1,0 +1,163 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500&family=Poppins&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+}
+/*--------- navbar -------------*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    
+}
+.navbar a{
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+    
+}
+.navbar .btn{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 4px 20px;
+
+}
+.fa-solid{
+    color: white;
+}
+
+.container{
+    background-color: #2D25A0;
+    height: 700px;
+    margin-bottom: 40px;
+    
+}
+.container-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.banner-width{
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+}
+.half-width{
+    width: 50%;
+}
+.left-info h1{
+    color:#FFFFFF;
+    font-size: 54px;
+}
+/* .container:hover .left-info{
+    transform: scale();
+} */
+
+.left-info{
+    /* margin-left: 50px; */
+    margin-right: 50px;
+    
+}
+
+.left-info .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 4px 15px;
+}
+/* .banner-img{
+    margin-left: 50px;
+    margin-right: 50px;
+} */
+.banner-img img{
+    width: 100%;
+    
+}
+
+/* ---------
+players info
+-------------*/
+.player-gallery{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    
+}
+.player{
+    
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom:10px ;
+    height: 500px;
+}
+.player img{
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+}
+.name{
+    font-size: 20px;
+    color: #18191F;
+}
+.player-info{
+    font-size: 14px;
+    color: #6C6C6C;
+}
+
+/* ----------------
+All Highlights
+----------------------------- */
+.all-highlights{
+    margin-bottom: 60px;
+}
+.left-info h2{
+    color: #0A0826;
+    font-size: 30px;
+}
+.left-info p{
+    color:#6C6C6C;
+    font-size: 14px;
+}
+.match-img img{
+    width: 100%;
+}
+ /* ----------------
+      Footer 
+ ----------------*/
+ .footer-details{
+    text-align: center;
+ }
+ .footer-info img{
+    width: 430px;
+    height: 110;
+    margin: auto;
+ }
+ .fa-brands{
+    font-size: 20px;
+    color: #969BAB;
+    margin: 10px;
+    padding: 10px;
+    background-color:gainsboro ;
+    border-radius: 30px;
+ }
+
+
