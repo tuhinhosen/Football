@@ -232,13 +232,12 @@ All Highlights
     }
     .banner-width{
         width: 90%;
+        margin-top: 60px;
     }
     .footer-info img{
         width:300px ;
     }
-    .navbar{
-        display: none;
-    }
+    
  }
 
 
