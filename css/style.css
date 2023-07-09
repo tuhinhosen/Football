@@ -17,7 +17,7 @@ body{
 }
 .navbar a{
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 0px 20px;
     font-size: 16px;
     color: #FFFFFF;
     
@@ -27,8 +27,11 @@ body{
     text-decoration: none;
     color: white;
     background-color: #E02C6D;
-    padding: 4px 20px;
+    padding: 10px 25px;
 
+}
+.icon{
+    display: none;
 }
 .fa-solid{
     color: white;
@@ -36,7 +39,7 @@ body{
 
 .container{
     background-color: #2D25A0;
-    height: 700px;
+    /* height: 700px; */
     margin-bottom: 40px;
     
 }
@@ -44,12 +47,13 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    
 }
 .banner-width{
     display:flex ;
     justify-content: space-evenly;
     align-items: center;
-    height: 100%;
+    margin-bottom: 60px;
     width: 75%;
 }
 .half-width{
@@ -69,11 +73,11 @@ body{
     
 }
 
-.left-info .btn {
+ .btn {
     text-decoration: none;
     color: white;
     background-color: #E02C6D;
-    padding: 4px 15px;
+    padding: 10px 25px;
 }
 /* .banner-img{
     margin-left: 50px;
@@ -92,6 +96,7 @@ players info
     justify-content: center;
     margin-bottom: 60px;
     
+    
 }
 .players{
     display: grid;
@@ -108,12 +113,20 @@ players info
     padding-right: 10px;
     padding-bottom:10px ;
     height: 500px;
+    overflow: hidden;
+    
 }
 .player img{
     width: 100%;
     height: 256px;
     object-fit: cover;
 }
+.player:hover img{
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+        
+}
+
 .name{
     font-size: 20px;
     color: #18191F;
@@ -121,6 +134,10 @@ players info
 .player-info{
     font-size: 14px;
     color: #6C6C6C;
+}
+.player-bio{
+    display: block;
+    overflow: hidden;
 }
 
 /* ----------------
@@ -159,7 +176,71 @@ All Highlights
     background-color:gainsboro ;
     border-radius: 30px;
  }
+ /* ----------------Mobile View -----------*/
+ @media only screen and (max-width: 600px) {
+    .container-content{
+        margin-top: 0;
+    }
+    .navbar{
+        display: none;
+    }
+    .banner-width{
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left-info{
+        margin-bottom: 40px;
+        
+    }
+    .left-info h1{
+        font-size: 40px;
+    }
+    .half-width{
+        width: 100%;
+    }
+    /* .banner-img img{
+        width: 80%;
+    } */
+    .players{
+        grid-template-columns: 1fr !important;
+    }
+    .footer-info img{
+        width:200px ;
+    }
+    .social-icon .fa-brands{
+        font-size: 10px;
+        margin:6px ;
+        padding: 6px;
+        border-radius: 30px;
+    }
+    
+    
 
- 
+ }
+
+ /* ------------Pad View -------------*/
+ @media only screen and (max-width: 992px){
+    .container-content{
+        margin-top: 0;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .left-info h1{
+        font-size: 40px;
+    }
+    .banner-width{
+        width: 90%;
+    }
+    .footer-info img{
+        width:300px ;
+    }
+    .navbar{
+        display: none;
+    }
+ }
+
+
 
 
